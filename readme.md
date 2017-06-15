@@ -1,3 +1,0 @@
-# Adonis GeoJSON Validator
-
-## Coming soon...
