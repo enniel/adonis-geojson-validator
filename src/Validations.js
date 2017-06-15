@@ -58,7 +58,7 @@ Validations.geojson = function (data, field, message, args, get) {
     }
     const isValid = geoJsonValidation[method](fieldValue)
     if (isValid) {
-      resolve('valid')
+      resolve('validation passed')
     } else {
       reject(message)
     }
