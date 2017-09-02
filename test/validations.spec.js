@@ -11,8 +11,6 @@ const _ = require('lodash')
 const chai = require('chai')
 const expect = chai.expect
 
-require('co-mocha')
-
 describe('Validations', function () {
   it('should work fine when geojson is valid geojson object', function * () {
     const data = {

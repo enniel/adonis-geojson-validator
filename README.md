@@ -15,7 +15,7 @@ or
 $ yarn add adonis-geojson-validator
 ```
 
-2. Register providers inside the your bootstrap/app.js file.
+2. Register providers inside the your start/app.js file.
 
 ```js
 const providers = [
@@ -62,7 +62,7 @@ const data = {
   }
 }
 
-yield Validator.validate(data, rules)
+await Validator.validate(data, rules)
 ```
 
 Supported types:

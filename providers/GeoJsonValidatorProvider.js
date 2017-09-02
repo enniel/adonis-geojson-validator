@@ -6,11 +6,11 @@
  * MIT Licensed
  */
 
-const ServiceProvider = require('adonis-fold').ServiceProvider
+const { ServiceProvider } = require('@adonisjs/fold')
 const Validations = require('../src/Validations')
 
 class GeoJsonValidatorProvider extends ServiceProvider {
-  * boot () {
+  boot () {
     const Validator = this.app.use('Adonis/Addons/Validator')
 
     Validator.extend('geojson', Validations.geojson, '{{field}} is not valid geojson')
